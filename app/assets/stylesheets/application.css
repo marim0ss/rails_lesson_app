@@ -61,7 +61,7 @@ input, textarea{
   color: white;
   list-style: none;  /* リストの「・」を消す */
   padding: 15px 25px;  /*余白top＋bottom,R＋L */
-  /* line-height: 64px;  /* limne-height:行の高さを指定できる ＋数値指定で中央配置*/ */
+  /* line-height: 64px;  /* limne-height:行の高さを指定できる ＋数値指定で中央配置*/
 }
 
 /* .main{
