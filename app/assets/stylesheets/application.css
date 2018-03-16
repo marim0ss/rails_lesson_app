@@ -1,0 +1,102 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ /* aタグのリンク、クリック後の文字色が見えにくかったので色を設定*
+* link:クリック前の、リンクされた状態
+* visited:クリック後の訪問済みの状態
+ * hover:マウスが重なったとき
+ * active：マウスをクリックした時　　で指定可能。
+ */
+ body{
+    margin: 0;
+    min-width:100%;
+ }
+
+ a:visited {
+   color: #FFC034;
+ }
+
+
+input, textarea{
+   font-size: 16px;
+ }
+
+
+ /* ヘッダーのcss*/
+ header {
+   height: 80px;
+   position: absolute;  /*position: absolute 要素を重ねて表示できる*/
+   z-index: 1;  /* 要素が重なった時の順序の指定。positionと一緒に使う*/
+   position: fixed;  /* ヘッダーを上に固定*/
+   width: 100%;
+   background-color: rgb(255, 189, 38);
+ }
+
+ .header-logo{
+   float: left;
+   color: white;
+   padding-left: 30px;  /* 左右の余白*/
+   padding-right: 30px;
+   font-size: 22px;
+   line-height: 80px;  /* limne-height:行の高さを指定できる ＋数値指定で中央配置*/
+ }
+
+
+
+.header-list li{
+  float: left;
+  color: white;
+  list-style: none;  /* リストの「・」を消す */
+  padding: 15px 25px;  /*余白top＋bottom,R＋L */
+  /* line-height: 64px;  /* limne-height:行の高さを指定できる ＋数値指定で中央配置*/ */
+}
+
+/* .main{
+  height: 1000px;
+} */
+
+/* フッターのCSS*/
+footer {
+  height: 20px;
+  position: absolute;  /*position: absolute 要素を重ねて表示できる*/
+  z-index: 1;  /* 要素が重なった時の順序の指定。positionと一緒に使う*/
+  bottom: 0;
+  width: 100%;
+  min-width:100%;
+  opacity: 0.5;
+}
+
+
+
+.footer-logo{
+  float: left;
+  color: white;
+  padding: 70px 30px 5px 30px;
+  font-size: 20px;
+  /* line-height: 30px;  /* limne-height:行の高さを指定できる ＋数値指定で中央配置*/ */
+}
+
+.footer-list{
+  float: right;  /* リストの位置は右に配置*/
+  color: white;
+  padding: 60px 30px 5px 30px;
+  /* line-height: 64px;  /* limne-height:行の高さを指定できる ＋数値指定で中央配置*/ */
+}
+.footer-list li{
+  float: left;     /* リスト項目は左から順に配置*/
+  padding-right: 30px;
+  list-style: none;  /* リストの「・」を消す */
+}

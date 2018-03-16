@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RailsLesson</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <header><!--共通のレイアウト(ヘッダーを記述)  -->
+   <a href="/main"><div class="header-logo">Rails lesson</div></a>
+   <div class="header-list">
+     <ul>
+       <li>About</li>
+       <li>このサイトの楽しみ方</li>
+       <li>Gallery</li>
+       <a href="/faq"><li>FAQ</li></a>
+       <a href="/form"><li>お問い合わせ</li></a>
+     </ul>
+
+   </div>
+  </header>
+
+  <div class="main"></div>
+
+<!-- フッター -->
+  <footer>
+    <a href="/main"><div class="footer-logo">Rails lesson</div></a>
+    <div class="footer-list">
+      <ul>
+        <li>About</li>
+        <a href="/faq"><li>FAQ</li></a>
+        <li>Blog</li>
+        <li><a href="/form">お問い合わせ</a></li>
+      </ul>
+
+    </div>
+  </footer>
+<%= yield %>
+
+</body>
+</html>

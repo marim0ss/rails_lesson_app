@@ -1,0 +1,90 @@
+// Place all the styles related to the sub controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+/* indexページ */
+.index-main{
+  padding: 200px 0 100px;
+  text-align: center;  /* テキストなどを配置を指定。中央寄せ*/
+  position: absolute;  /* 左上を基準として */
+  top: 0;     /*の位置に場所を展開*/
+  width: 100%;
+  height: auto;
+  min-height: 100%;    /*領域の最小値を定める*/
+  color: white;
+  background-image: url("/top3.png");  /* 背景画像の指定。url("画像URL")*/
+  background-size: cover;
+}
+
+/* 問い合わせformページ */
+.form-main{
+  padding-top: 100px;
+  padding-bottom: 20px;
+  // text-align: left;  /* テキストなどを配置を指定。左寄せ*/
+  position: absolute;  /* 左上を基準として */
+  top: 0;   /*の位置に場所を展開*/
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  background-image: url("/burned_sky.png");  /* 背景画像の指定。url("画像URL")*/
+  background-size: cover;
+
+}
+
+.form{
+  padding-left: 30px;
+}
+
+.form-main textarea{
+  padding: 20px;
+  min-height: 140px; /*領域の最小値を定める*/
+  border: 1px solid rgb(216, 218, 223);   /*　textareaの枠線色・太さ　inputに合わせる*/
+  width: 300px;
+}
+
+.form_box{
+  width: 50%;
+  background-color: rgba(255,187, 174, 0.5);
+  margin: 150px auto;   /*boxが中央に配置されるよう左右のmarginがつく*/
+  padding: 10px;    /* box の内側に余白を作る*/
+}
+
+.form-heading, .form p{
+  color: #E9DED0
+}
+
+// input送信ボタンはインライン要素だったので、
+// 配置：横並び
+// width,height指定できない
+// margin,paddingは左右のみ指定できる
+//  =>　ブロック要素に変更して縦並びできるようにした
+.form_btn{
+  display: block;
+}
+
+
+/* FAQページ*/
+.faq_wrapper{
+  position: absolute;  /* 左上を基準として */
+  top: 80px;  /*の位置に場所を展開*/
+  width: 100%;
+  height: auto;
+  min-height: 100%;    /*領域の最小値を定める*/
+  background-color: #5C3F37;
+}
+.faq_box{
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px 100px;
+  background-color: white;
+  border-radius: 25px;      /*boxの角のを丸める*/
+}
+
+.faq_index{
+}
+
+.faq_main{
+  color: white;
+  text-align: center;
+}
