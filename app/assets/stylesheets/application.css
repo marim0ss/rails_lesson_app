@@ -86,14 +86,14 @@ footer {
   color: white;
   padding: 70px 30px 5px 30px;
   font-size: 20px;
-  /* line-height: 30px;  /* limne-height:行の高さを指定できる ＋数値指定で中央配置*/ */
+  /* line-height: 30px;  /* limne-height:行の高さを指定できる ＋数値指定で中央配置*/
 }
 
 .footer-list{
   float: right;  /* リストの位置は右に配置*/
   color: white;
   padding: 60px 30px 5px 30px;
-  /* line-height: 64px;  /* limne-height:行の高さを指定できる ＋数値指定で中央配置*/ */
+  /* line-height: 64px;  /* limne-height:行の高さを指定できる ＋数値指定で中央配置*/
 }
 .footer-list li{
   float: left;     /* リスト項目は左から順に配置*/
